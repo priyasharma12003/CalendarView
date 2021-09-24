@@ -1,4 +1,4 @@
-package com.example.projectm3;
+package com.example.projectm3.Database;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;

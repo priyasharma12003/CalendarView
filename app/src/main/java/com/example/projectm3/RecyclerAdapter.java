@@ -17,6 +17,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.projectm3.Database.DaoCalender;
+import com.example.projectm3.Database.Data;
+import com.example.projectm3.Database.RoomDb;
+import com.example.projectm3.Dialog.OpenDialog;
+
 import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolderClss> {
@@ -27,7 +32,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     public RecyclerAdapter(List<Data> list, Context context) {
         this.context=context;
         this.list = list;
-        database=RoomDb.instance.getDao();
+        database= RoomDb.instance.getDao();
     }
 
     @NonNull
@@ -101,7 +106,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
                 @Override
                 public void onClick(View v) {
                     Data data = list.get(getAdapterPosition());
-                    OpenDialog dialog = new OpenDialog(context, data.eventName, data.description, data.date);
+                    OpenDialog dialog = new OpenDialog(context, data.getEventName(), data.getDescription(), data.getDate());
                     dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                     dialog.show();
 

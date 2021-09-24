@@ -1,4 +1,4 @@
-package com.example.projectm3;
+package com.example.projectm3.Dialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -13,6 +13,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.projectm3.Database.DaoCalender;
+import com.example.projectm3.Database.Data;
+import com.example.projectm3.R;
+import com.example.projectm3.Database.RoomDb;
+
 public class SelectDate extends Dialog {
     EditText eventname,eventdes;
     Button submitbtn;
@@ -24,7 +29,7 @@ public class SelectDate extends Dialog {
         super(context);
         this.context=context;
         this.fulldate=fulldate;
-        database=RoomDb.instance.getDao();
+        database= RoomDb.instance.getDao();
     }
 
 

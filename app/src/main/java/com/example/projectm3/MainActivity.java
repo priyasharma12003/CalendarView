@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -16,11 +15,13 @@ import android.widget.CalendarView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import java.text.SimpleDateFormat;
+import com.example.projectm3.Database.DaoCalender;
+import com.example.projectm3.Database.Data;
+import com.example.projectm3.Database.RoomDb;
+import com.example.projectm3.Dialog.SelectDate;
+
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     CalendarView calendarView;

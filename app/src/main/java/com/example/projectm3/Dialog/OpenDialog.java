@@ -1,4 +1,4 @@
-package com.example.projectm3;
+package com.example.projectm3.Dialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.projectm3.R;
 
 
 public class OpenDialog extends Dialog {

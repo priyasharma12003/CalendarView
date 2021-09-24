@@ -1,4 +1,4 @@
-package com.example.projectm3;
+package com.example.projectm3.Database;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
